@@ -5,7 +5,7 @@
 ## Thermal Analysis of 2-Stage Reuseable Launch Vehicle Insulated Downcomer using Sinda-G DLL and VISSIM.
 
 ##
-## I. Operation: "./aecs_orig.exe"
+## I. Operation:
 ## Ia. Pre-Process: "./SINDA_Preprocess/"
 ## Ib. SINDA-G DLL Creation for VISSIM: "./SINDA_DLL_Creation/"
 ## Ic. VISSIM w/ SINDA-G DLL: "./VISSIM_w_SINDA_DLL/"
