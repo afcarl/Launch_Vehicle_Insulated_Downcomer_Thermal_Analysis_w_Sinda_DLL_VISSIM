@@ -1,0 +1,115 @@
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80 NETWORK ANALYSIS ASSOCIATES, INC. - PAGE            1
+
+      OV Downcomer                                                                                                           
+
+ *** NOTE *** SNDSNR REQUIRES        42 DYNAMIC STORAGE LOCATIONS OUT OF     9968 AVAILABLE ***
+
+ SNDSNR RUN, ARLXCA=0.10000    , BALENG= 1.0000    , NLOOP=******
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     0, SENGIN= 0.00000E+00, ENGBAL= 0.00000E+00         , ARLXCC(      0)= 0.00000E+00, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T      2 =   70.0000 T      3 =   70.0000 T      4 =   70.0000 T      5 =   70.0000 T      6 =   70.0000 T     61 =   70.0000
+ T     11 = -310.0000 T     60 =  -25.0000 T     10 =  -30.0000
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     0, SENGIN= 0.00000E+00, ENGBAL= 0.00000E+00         , ARLXCC(      0)= 0.00000E+00, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T      2 =   70.0000 T      3 =   70.0000 T      4 =   70.0000 T      5 =   70.0000 T      6 =   70.0000 T     10 =  -30.0000
+ T     11 = -310.0000 T     60 =  -25.0000 T     61 =   70.0000
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     0, SENGIN= 0.00000E+00, ENGBAL= 0.00000E+00         , ARLXCC(      0)= 0.00000E+00, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T     61 =   70.0000 T      6 =   70.0000 T      5 =   70.0000 T      4 =   70.0000 T      3 =   70.0000 T      2 =   70.0000
+ T     60 =  -25.0000 T     10 =  -30.0000 T     11 = -310.0000
+ 
+ *** NOTE *** QNPRNT BORROWING     18 DYNAMIC STORAGE LOCATIONS OUT OF    9917 AVAILABLE 
+    NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET       NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET
+    NO.       QIN         QIN        QIN           Q           NO.       QIN         QIN        QIN           Q
+       2   0.0000     -1956.2      0.0000     -1956.2    ,        3   0.0000      0.0000      0.0000      0.0000    , 
+       4   0.0000      0.0000      0.0000      0.0000    ,        5   0.0000      0.0000      0.0000      0.0000    , 
+       6   0.0000     -.61062E+06  0.0000     -.61062E+06,       61   0.0000      0.0000      0.0000      0.0000    , 
+      11   0.0000      1956.2      0.0000      1956.2    ,       60   0.0000      15595.      0.0000      15595.    , 
+      10   0.0000     0.61062E+06  0.0000     0.61062E+06, 
+
+ *** NOTE *** RELAXATION CRITERIA HAS BEEN MET WITH LOOPCT =     4
+
+     ENGBAL =-0.150866     AT LOOPCT =     4
+
+ *** NOTE *** SYSTEM ENERGY BALANCE CRITERIA HAS BEEN MET, ENGBAL =-0.150866    , LOOPCT =     4
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T      2 =  -54.4643 T      3 =  -29.6648 T      4 =  -30.2189 T      5 =  -30.1694 T      6 =  -30.0603 T     61 =  -29.6644
+ T     11 = -310.0000 T     60 =  -25.0000 T     10 =  -30.0000
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80 NETWORK ANALYSIS ASSOCIATES, INC. - PAGE            2
+
+      OV Downcomer                                                                                                           
+ T      2 =  -54.4643 T      3 =  -29.6648 T      4 =  -30.2189 T      5 =  -30.1694 T      6 =  -30.0603 T     10 =  -30.0000
+ T     11 = -310.0000 T     60 =  -25.0000 T     61 =  -29.6644
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T     60 =  -25.0000 T     61 =  -29.6644 T      3 =  -29.6648 T     10 =  -30.0000 T      6 =  -30.0603 T      5 =  -30.1694
+ T      4 =  -30.2189 T      2 =  -54.4644 T     11 = -310.0000
+ 
+ *** NOTE *** QNPRNT BORROWING     18 DYNAMIC STORAGE LOCATIONS OUT OF    9917 AVAILABLE 
+    NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET       NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET
+    NO.       QIN         QIN        QIN           Q           NO.       QIN         QIN        QIN           Q
+       2   0.0000     -417.59      417.60     0.45776E-02,        3   0.0000     -765.69      0.0000     -765.69    , 
+       4   0.0000      417.49     -417.60     -.11163    ,        5   0.0000     0.18860E-01  0.0000     0.18860E-01, 
+       6   0.0000     0.18262      0.0000     0.18262    ,       61   0.0000     -.70137E-01  0.0000     -.70137E-01, 
+      11   0.0000      1133.9      0.0000      1133.9    ,       60   0.0000     -765.77      0.0000     -765.77    , 
+      10   0.0000     -368.22      0.0000     -368.22    , 
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T      2 =  -54.4644 T      3 =  -29.6648 T      4 =  -30.2189 T      5 =  -30.1694 T      6 =  -30.0603 T     61 =  -29.6644
+ T     11 = -310.0000 T     60 =  -25.0000 T     10 =  -30.0000
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T      2 =  -54.4644 T      3 =  -29.6648 T      4 =  -30.2189 T      5 =  -30.1694 T      6 =  -30.0603 T     10 =  -30.0000
+ T     11 = -310.0000 T     60 =  -25.0000 T     61 =  -29.6644
+
+ *****************
+ TIME= 0.00000E+00, DTIMEU= 0.00000E+00, CSGMIN(      0)= 0.00000E+00, ATMPCC(      0)= 0.00000E+00, DTMPCC(      0)= 0.00000E+00
+     LOOPCT=     4, SENGIN= 1.13380E+03, ENGBAL=-1.50866E-01         , ARLXCC(     61)= 1.12610E-02, DRLXCC(      0)= 0.00000E+00
+ 
+ **** OUTPUT TEMPERATURES IN DEGREES   ****
+ T     60 =  -25.0000 T     61 =  -29.6644 T      3 =  -29.6648 T     10 =  -30.0000 T      6 =  -30.0603 T      5 =  -30.1694
+ T      4 =  -30.2189 T      2 =  -54.4644 T     11 = -310.0000
+ 
+ *** NOTE *** QNPRNT BORROWING     18 DYNAMIC STORAGE LOCATIONS OUT OF    9917 AVAILABLE 
+    NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET       NODE   IMPRESSED   CONDUCTED   RADIATED    TOTAL NET
+    NO.       QIN         QIN        QIN           Q           NO.       QIN         QIN        QIN           Q
+       2   0.0000     -417.59      417.60     0.45776E-02,        3   0.0000     -765.69      0.0000     -765.69    , 
+       4   0.0000      417.49     -417.60     -.11163    ,        5   0.0000     0.18860E-01  0.0000     0.18860E-01, 
+       6   0.0000     0.18262      0.0000     0.18262    ,       61   0.0000     -.70137E-01  0.0000     -.70137E-01, 
+      11   0.0000      1133.9      0.0000      1133.9    ,       60   0.0000     -765.77      0.0000     -765.77    , 
+      10   0.0000     -368.22      0.0000     -368.22    , 

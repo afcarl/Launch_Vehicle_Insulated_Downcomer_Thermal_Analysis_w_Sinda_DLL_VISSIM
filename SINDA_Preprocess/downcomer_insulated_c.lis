@@ -1,0 +1,157 @@
+ (C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+        BCD 3THERMAL LPCS                                                        
+ *** NOTE: DYNAMIC STORAGE BUCKET =2000000, INFO ONLY
+        BCD 9 OV Downcomer                                                       
+        END                                                                      
+        BCD 3NODE DATA                                                           
+           -11, -310.,0.       $ LOX Downcomer Inside Surface                    
+ C            1,   70.,  1.     $ LOX Downcomer Inconel Outside Surface          
+             2,   70.,  1.     $ Downcomer Insulation Surface                    
+             3,   70.,  1.     $ Purge Gas Node                                  
+             4,   70.,  1.     $ RP Tank Surface                                 
+             5,   70.,  1.     $ Inside Surface, Top G-E Layer, RP Tank          
+             6,   70.,  1.     $ Outside Surface, Bot.G-E Layer, RP Tank         
+           -60,   23.6,  1.     $ Source of Purge Gas ?                          
+            61,   70.,  1.     $ Purge Discharge from Downcomer Annulus          
+           -10,  -30.,  1.     $ RP Tank Interior Wall                           
+        END                                                                      
+
+  NODAL ANALYSIS, DIFUS (CONSTANT=      6, VARIABLE=      0), ARITH=      0, BOUNDARY=    3, TOTAL=      9, NLC=    0
+
+     RELATIVE NUMBERS                                           ACTUAL NUMBERS
+
+       1 THRU      9 -        2        3        4        5        6       61       11       60       10
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  ' - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3SOURCE DATA                                                         
+        END                                                                      
+
+  SOURCE ANALYSIS - CONSTANT IMPRESSED =      0, VARIABLE IMPRESSED =      0,  TOTAL =      0, NLQ=    0
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  ' - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3CONDUCTOR DATA                                                      
+ C       SIV    1,  11,  1,   A1, 8775.8    $Conduction thru Inconel             
+        SIV    2,  11,  2,   A2, 476.1     $CONDUCTION Cryo Insulation           
+               3,   2,  3,   90.621        $CONVECTIVE h=2.118                   
+               4,   3,  4,   280.07        $CONVECTIVE h=2.425                   
+        SIV    5,   4,  5,   A3, 22601.    $CONDUCTION THRU G-E Top Layer        
+        SIV    6,   5,  6,   A4, 55.888    $CONDUCTION THRU Al. Honeycomb        
+        SIV    7,   6, -10,   A3, 18560.    $CONDUCTION THRU G-E Bot.Layer       
+ C        CONVECTION FROM PURGE INLET                                            
+               8,  -60,  3, 474.                                                 
+              81,  -3,  61, 474.                                                 
+ C        RADIATION FROM RP Annulus TO LOX Downcomer Surface                     
+              -9,   2,  4, 34.453                                                
+        END                                                                      
+
+  COND ANALYSIS - CONST=    5, VARB=    4 TOTAL=     9, EFF=     9, LIN=    8, RAD=     1, O/W=   3, NLG=    4
+
+     RELATIVE NUMBERS                                             ACTUAL NUMBERS
+
+       1 THRU      9           2         3         4         5         6         7         8        81        -9
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  ' - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3CONSTANTS                                                           
+            NDIM=10000                                                           
+            DRLXCA=0.1                                                           
+            ARLXCA=0.1                                                           
+            BALENG=1.0                                                           
+            NLOOP=1000.                                                          
+            SIGMA=0.1714E-8                                                      
+            100=32.92          $ LOX skirt purge flow (lbm/min)                  
+            101=2.118          $ downcomer surface h coeff. (btu/hr-ft^2-F)      
+            102=2.425          $ RP tank tunnel surface h coeff. (btu/hr-ft^2-F) 
+            103=23.6           $ purge temp at inlet to downcomer tunnel (F)     
+            130=0.0            $ output call accumulator variable                
+            160=0.0            $ output variable for air flow net energy loss (bt
+        END                                                                      
+
+ CONSTANTS - CC(  5/125), USER=   6, CAPC=   0, SRCE=   0, COND=   4, PRES=   0, TUBE=   0, TOTAL=   10
+
+     RELATIVE NUMBERS                                           ACTUAL NUMBERS
+
+       1 THRU      6           100      101      102      103      130      160
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  ' - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3ARRAY DATA                                                          
+ C       Inconel 718  K  VS.  TEMP.                                              
+                 1, -400., 4.1, 68., 6.4, 600., 9.2, END                         
+ C       SS-1171 (Cryofoam)  K  VS.  TEMP.                                       
+                 2, -400., 0.004098, -200., 0.008894, -100., 0.011292            
+                       0., 0.01369,   100., 0.016088,  200.,0.018486             
+                                      300., 0.020884, END                        
+ C       GRAPHITE/EPOXY K  VS.  TEMP.                                            
+                 3,  -75.,0.32, 75.,0.35,  250.,0.37, END                        
+ C       Aluminum 5056 K  VS.  TEMP.                                             
+                 4, -400.,20.22, -300.,38.75, -180.,50.55, 77., 67.4, END        
+        END                                                                      
+
+  ARRAY ANALYSIS - NUMBER OF ARRAYS =     4,  TOTAL LENGTH =      38
+
+                                   ACTUAL ARRAY NUMBERS VERSUS FORTRAN ADDRESSES
+
+ A      1=A(      1), A      2=A(      8), A      3=A(     23), A      4=A(     30), A
+ 
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+ *** NOTE: SEGMENT SIZE = 999959 - INFO ONLY
+
+ *** PSEUDO COMPUTE SEQUENCE 1 LENGTH IS      84, PSEUDO COMPUTE SEQUENCE 2 LENGTH IS      15, TOTAL IS       99
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3EXECUTION                                                           
+ F      open(8,file='downcomer_insulated_c_08.out',access='sequential',          
+ F    +  status='unknown')                                                       
+ M       XK130 = 0                                                               
+            SNDSNR                                                               
+        END                                                                      
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3VARIABLES 1                                                         
+ C                                                                               
+ M      T60=XK103                                                                
+ C                                                                               
+ M      G8=XK100 * 14.4                                                          
+ M      G81=XK100 * 14.4                                                         
+ C                                                                               
+ M      G3=XK101 * 42.79                                                         
+ M      G4=XK102 * 115.49                                                        
+ C                                                                               
+        END                                                                      
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3VARIABLES 2                                                         
+        END                                                                      
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3OUTPUT CALLS                                                        
+            TPRINT                                                               
+            TPNTSN                                                               
+            TPNTST                                                               
+            QNPRNT                                                               
+ C                                                                               
+ M      XK160 = G8 * (T3 - T60) - G81 * (T61 - T3)                               
+ C                                                                               
+ M      XK130 = XK130 + 1.0                                                      
+ M      if (XK130.gt.2.0) then                                                   
+ M        write(8,991) T61,XK160                                                 
+ M      endif                                                                    
+ F 991 format(1x,E14.7,1x,E14.7)                                                 
+        END                                                                      
+1(C) COPYRIGHT 1982-1998 J.D.GASKI SINDA/G VERSION-1.80  - NETWORK ANALYSIS ASSOCIATES, INC.
+  OV Downcomer                                                                                                           
+
+        BCD 3END OF DATA                                                         
+
+                        *** SUCCESSFUL SINDA/G VERSION-1.80  PREPROCESS ***
+                                             *** CONGRATULATIONS, PROCEED TO THE COMPILER ***
+
